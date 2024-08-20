@@ -28,6 +28,7 @@ Creiamo delle miniature di tutte le immagni, in cui dovrà apparire in evidenza 
 const carouselGallery = document.getElementById('gallery');
 const prevArrow = document.getElementById('prev');
 const nextArrow = document.getElementById('next');
+const thumbGallery = document.getElementById('thumbnails');
 
 //2 preparo la sorgente delle img
 
@@ -45,6 +46,8 @@ for(let i = 0; i < sources.length; i++) {
 //4 rimetto in pagina le immagini generate
 
 carouselGallery.innerHTML = imgs;
+//rimettiamo in pagina i thumbnails generati dalle immagini
+thumbGallery.innerHTML = imgs;
 
 //5 richiamo dal DOM le immagini generate
 

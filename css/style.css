@@ -57,3 +57,22 @@ left: 5px;
 #next {
 right: 5px;
 }
+
+#thumbnails {
+    width: 700px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+#thumbnails img {
+    height: 100%;
+    width: 20%;
+    border-radius: 20px;
+    opacity: 50%;
+    
+}
+
+#thumbnail img.active {
+    opacity: 0;
+    box-shadow: 0px 0px 10px rgb(45, 20, 68);
+}
