@@ -30,3 +30,12 @@ const carouselGallery = document.getElementById('gallery');
 //2 preparo la sorgente delle img
 
 const sources = ['img 01.webpp','img 02.webpp','img 03.webpp','img 04.webpp','img 05.webpp']
+
+//3 genero le immagini
+
+let imgs = '';
+
+for(let i = 0; i < sources.length; i++) {
+    const currentImages = sources[i];
+    imgs += `<img src="${currentImages}" alt="illustration${i} ">`
+}
