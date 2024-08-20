@@ -9,8 +9,7 @@ Al click dell'utente sulle frecce, l'immagine attiva cambia e diventa visibile n
 BONUS 1:
 Aggiungere il ciclo infinito del carosello. Ovvero se l' immagine attiva è la prima e l'utente clicca la freccia per andare indietro, la miniatura che deve attivarsi sarà l'ultima e viceversa per l'ultima miniatura se l'utente clicca la freccia verso avanti, deve attivarsi la prima immgine.
 BONUS 2:
-Creiamo delle miniature di tutte le immagni, in cui dovrà apparire in evidenza l’immagine equivalente a quella attiva, scegliete liberamente se scurire le altre immagini oppure se evidenziarla semplicemente con un bordo. Tra queste miniature, quella corrispondente all'immagine attiva deve evidenziarsi, scegliete voi l'effetto estetico, potete colorarla diversamente rispetto alle altre o aggiungere un semplice bordo.
-
+Creiamo delle miniature di tutte le immagni, in cui dovrà apparire in evidenza l’immagine equivalente a quella attiva, scegliete liberamente se scurire le altre immagini oppure se evidenziarla semplicemente con un bordo. Tra queste miniature, quella corrispondente all'immagine attiva deve evidenziarsi, scegliete voi l'effetto estetico, potete colorarla diversamente rispetto alle altre o aggiungere un semplice bordo.*/
 
 
 //1 prendo gli elementi di mio interesse dal DOM
@@ -23,3 +22,11 @@ Creiamo delle miniature di tutte le immagni, in cui dovrà apparire in evidenza 
 //8 creiamo una freccia per scorrere indietro indietro
 //9 BONUS: aggiungiamo un ciclo infinito per non interromperre lo scorrimento delle immagini avanti e inditro
 //10 BONUS: creiamo delle miniature "attive " delle nostre immagini.
+
+//1 prendo gli elementi di mio interesse dal DOM
+
+const carouselGallery = document.getElementById('gallery');
+
+//2 preparo la sorgente delle img
+
+const sources = ['img 01.webpp','img 02.webpp','img 03.webpp','img 04.webpp','img 05.webpp']
