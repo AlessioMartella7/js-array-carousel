@@ -69,10 +69,16 @@ right: 5px;
     width: 20%;
     border-radius: 20px;
     opacity: 50%;
-    
 }
 
-#thumbnail img.active {
-    opacity: 0;
-    box-shadow: 0px 0px 10px rgb(45, 20, 68);
+#thumbnails img:hover  {
+    transform: scale(1.1);
+    opacity: 75%;
+    cursor: pointer;
+}
+
+#thumbnails img.active {
+    opacity: 100%;
+    box-shadow: 0px 0px 20px 5px rgb(178, 164, 190);
+
 }
