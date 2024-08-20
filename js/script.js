@@ -19,7 +19,7 @@ Creiamo delle miniature di tutte le immagni, in cui dovrà apparire in evidenza 
 //5 richiamo dal DOM le immagini generate
 //6 rendiamo visibile la prima immagine dando classe active
 //7 creiamo una freccia per scorrere avanti le immagini
-//8 creiamo una freccia per scorrere indietro indietro
+//8 creiamo una freccia per scorrere indietro le immagini
 //9 BONUS: aggiungiamo un ciclo infinito per non interromperre lo scorrimento delle immagini avanti e inditro
 //10 BONUS: creiamo delle miniature "attive " delle nostre immagini.
 
@@ -65,7 +65,19 @@ currentActiveImage++ ;
 
 // aggiungiamo la classe active all'immagine successiva
 images[currentActiveImage].classList.add('active');
+});
 
+//8 creiamo una freccia per scorrere indietro le immagini
+ 
+prevArrow.addEventListener('click', function() {
+// rimuoviamo la classe active dall'immagine attuale
+images[currentActiveImage].classList.remove('active');
+
+// decrementiamo il nostro indice
+currentActiveImage-- ;
+    
+// aggiungiamo la classe active all'immagine successiva
+images[currentActiveImage].classList.add('active');
 });
 
 
