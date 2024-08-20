@@ -63,6 +63,10 @@ images[currentActiveImage].classList.remove('active');
 // incrementiamo il nostro indice
 currentActiveImage++ ;
 
+//9a BONUS: aggiungiamo un ciclo infinito per non interromperre lo scorrimento delle immagini avanti
+
+if(currentActiveImage === images.length) {currentActiveImage = 0;}
+
 // aggiungiamo la classe active all'immagine successiva
 images[currentActiveImage].classList.add('active');
 });
@@ -75,9 +79,12 @@ images[currentActiveImage].classList.remove('active');
 
 // decrementiamo il nostro indice
 currentActiveImage-- ;
+
+//9b BONUS: aggiungiamo un ciclo infinito per non interromperre lo scorrimento delle immagini indietro
+
+if(currentActiveImage < 0) {currentActiveImage = images.length -1; } 
     
 // aggiungiamo la classe active all'immagine successiva
 images[currentActiveImage].classList.add('active');
 });
-
 
