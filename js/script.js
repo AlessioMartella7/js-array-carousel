@@ -26,6 +26,8 @@ Creiamo delle miniature di tutte le immagni, in cui dovrà apparire in evidenza 
 //1 prendo gli elementi di mio interesse dal DOM
 
 const carouselGallery = document.getElementById('gallery');
+const prevArrow = document.getElementById('prev');
+const nextArrow = document.getElementById('next');
 
 //2 preparo la sorgente delle img
 
@@ -52,3 +54,9 @@ const images = document.querySelectorAll('#gallery img');
 
 let currentActiveImage = 0;
 images[currentActiveImage].classList.add('active');
+
+//7 creiamo una freccia per scorrere avanti le immagini
+ 
+
+
+

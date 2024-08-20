@@ -22,6 +22,7 @@ body {
     width: 700px;
     height: 450px;
     margin: 50px auto;
+    position: relative;
 }
 
 #gallery {
@@ -39,4 +40,20 @@ body {
 
 #gallery img.active {
     display: block;
+  
+}
+
+.bi {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+#prev {
+left: 5px;
+}
+
+#next {
+right: 5px;
 }
