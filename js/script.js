@@ -15,8 +15,8 @@ Creiamo delle miniature di tutte le immagni, in cui dovrà apparire in evidenza 
 //1 prendo gli elementi di mio interesse dal DOM
 //2 preparo la sorgente delle img
 //3 genero le immagini
-//4 rimetto in pagina le immagini generate
-//5 richiamo dal DOM le immagini generate
+//4 richiamo dal DOM le immagini generate
+//5 rimetto in pagina le immagini generate
 //6 rendiamo visibile la prima immagine dando classe active
 //7 creiamo una freccia per scorrere avanti le immagini
 //8 creiamo una freccia per scorrere indietro indietro
@@ -37,5 +37,11 @@ let imgs = '';
 
 for(let i = 0; i < sources.length; i++) {
     const currentImages = sources[i];
-    imgs += `<img src="${currentImages}" alt="illustration${i} ">`
+    imgs += `<img src="${currentImages}" alt="illustration${i} ">`;
 }
+
+//4 richiamo da DOM le immagini generate
+
+const images = document.querySelectorAll('#gallery img');
+
+
