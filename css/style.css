@@ -37,6 +37,6 @@ body {
  
 }
 
-img.active {
+#gallery img.active {
     display: block;
 }

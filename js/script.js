@@ -40,10 +40,15 @@ for(let i = 0; i < sources.length; i++) {
     imgs += `<img src="${currentImages}" alt="illustration${i} ">`;
 }
 
-//5 rimetto in pagina le immagini generate
+//4 rimetto in pagina le immagini generate
 
 carouselGallery.innerHTML = imgs;
 
-//4 richiamo dal DOM le immagini generate
+//5 richiamo dal DOM le immagini generate
 
 const images = document.querySelectorAll('#gallery img');
+
+//6 rendiamo visibile la prima immagine dando classe active
+
+let currentActiveImage = 0;
+images[currentActiveImage].classList.add('active');
