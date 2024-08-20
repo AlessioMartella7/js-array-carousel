@@ -57,6 +57,15 @@ images[currentActiveImage].classList.add('active');
 
 //7 creiamo una freccia per scorrere avanti le immagini
  
+nextArrow.addEventListener('click', function() {
+// rimuoviamo la classe active dall'immagine attuale
+images[currentActiveImage].classList.remove('active');
+// incrementiamo il nostro indice
+currentActiveImage++ ;
 
+// aggiungiamo la classe active all'immagine successiva
+images[currentActiveImage].classList.add('active');
+
+});
 
 
